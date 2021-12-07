@@ -1,0 +1,175 @@
+/*======================================
+//--//-->   FONT
+======================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  font-family: "Poppins", sans-serif;
+}
+h4,
+h5 {
+  color: #0475ba;
+  font-size: 1.5rem;
+}
+
+/*======================================
+//--//-->   NAV
+======================================*/
+nav {
+  margin: auto;
+  padding: 0;
+
+  background-color: #0475ba;
+  color: white;
+}
+nav li {
+  display: inline-block;
+  padding: 0 3px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.menu {
+  display: inline-block;
+}
+/*======================================
+//--//-->   INTRO
+======================================*/
+.intro {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 3% 0 3% 10%;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 10px 9px 12px -9px rgb(78, 70, 70);
+  margin-left: 25%;
+  margin-right: 25%;
+  justify-content: center;
+}
+
+/*======================================
+//--//-->   PRESENTATION
+======================================*/
+.presentation {
+  background-color: #0475ba;
+  color: white;
+  margin: 10px;
+  padding: 3% 0 3% 10%;
+}
+
+/*======================================
+//--//-->   EXPERIENCES PROFESSIONNELLES 
+======================================*/
+.experiences {
+  margin: auto;
+  padding: 3% 0 3% 10%;
+}
+.years {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.numbers {
+  margin-right: 30%;
+}
+
+/*======================================
+//--//-->   FORMATIONS 
+======================================*/
+.formations {
+  background-color: #0475ba;
+  color: white;
+  margin: 10px;
+  padding: 3% 0 3% 10%;
+}
+.formations p {
+  margin: 0;
+  margin-right: 30%;
+}
+
+/*======================================
+//--//-->   PASSIONS
+======================================*/
+.passions {
+  padding: 3% 0 3% 10%;
+}
+/*======================================
+//--//-->   FOOTER
+======================================*/
+footer {
+  background-color: #0475ba;
+  color: white;
+  margin: 10px;
+  padding: 3% 0 3% 10%;
+  list-style-type: none;
+}
+.networks {
+  display: flex;
+}
+.link {
+  justify-content: space-between;
+  margin-right: 20%;
+}
+.icone {
+  justify-content: space-between;
+}
+.fab {
+  margin-right: 50%;
+}
+a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: white;
+}
+
+/*======================================
+//--//-->   RESPONSIVE
+======================================*/
+@media all and (max-width: 576px) {
+  .intro,
+  .presentation,
+  .experiences,
+  .formations,
+  .passions,
+  .networks {
+    display: flex;
+    flex-direction: column;
+    grid-auto-columns: repeat (auto, 1fr);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  img {
+    width: 50%;
+    height: auto;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  li {
+    font-size: 1rem;
+  }
+  h4,
+  h5 {
+    justify-self: center;
+  }
+  .experiences p,
+  .formations p {
+    margin: 0;
+    margin-right: 10%;
+  }
+  .intro {
+    padding: 3% 0 3% 5%;
+  }
+}
